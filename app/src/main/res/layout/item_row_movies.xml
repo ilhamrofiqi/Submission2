@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="3dp"
+    android:background="@drawable/corner">
+
+    <ImageView
+        android:id="@+id/img_movies_photo"
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        tools:src="@android:color/darker_gray"
+        android:contentDescription="@string/movies_photo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_movies_photo"
+        android:layout_toRightOf="@+id/img_movies_photo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_movies_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:text="@string/movies_title" />
+        <TextView
+            android:id="@+id/tv_movies_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            tools:text="@string/movies_genre" />
+        <TextView
+            android:id="@+id/tv_movies_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="-3dp"
+            android:textSize="12sp"
+            tools:text="@string/movies_year" />
+
+    </LinearLayout>
+
+</RelativeLayout>
